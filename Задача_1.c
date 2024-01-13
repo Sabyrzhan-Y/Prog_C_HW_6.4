@@ -14,7 +14,12 @@
 
 int main(void)
 {
-
+int a, b;
+scanf("%d %d", &a, &b);
+if (a <= 100 && b <= 100)
+    
+else 
+    printf("more 100");
 
     return 0;
 }
