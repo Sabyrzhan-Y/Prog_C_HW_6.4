@@ -16,6 +16,28 @@
 
 int main(void)
 {
-    
+    int Input_number, index, sum, multiplication;
+    scanf("%d", &Input_number);
+    if (Input_number > 10)
+    {
+        for (index = 10; index <= Input_number; index++)
+        {
+            int x, last_number;
+            sum = 0;
+            multiplication = 1;
+            x = index;
+            do
+            {
+                last_number = x % 10;
+                sum = sum + last_number;
+                multiplication = multiplication * last_number;
+                x /= 10;
+            } while (x > 0);
+        if (sum == multiplication)
+            printf("%d ", index);
+        }
+    }
+    else
+        printf("less than 10");
     return 0;
 }
