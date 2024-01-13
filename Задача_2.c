@@ -14,6 +14,12 @@
 
 int main(void)
 {
-    
+    int a, counter = 0;
+    scanf("%d", &a);
+        for (;a > 0;a /= 10)counter++;
+    if (counter == 3)
+        printf("YES");
+    else
+        printf("NO");
     return 0;
 }
