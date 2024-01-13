@@ -14,9 +14,27 @@
 
 int main(void)
 {
-    int a, Number_counter = 0;
+    int a, Number_counter = 0, i;
     scanf("%d", &a);
-    for (;a > 0; a /= 10) Number_counter++;
-    printf("%d", Number_counter);
+    for (i = a; i > 0; i /= 10)
+        Number_counter++;
+    int Invert = 0, temp;
+    if (a > 0)
+    {
+        do
+        {
+            temp = a % 10;
+            Invert = (Invert + temp) * 10;
+            a /= 10;
+            i++;
+        } while (i != Number_counter);
+        printf("%d\n", Invert /= 10);
+    }
+    else
+        printf("%d\n", a);
+    
     return 0;
 }
+/* Переменная "i" служит в качестве временного значения. 
+В первом цикле он служит для того, чтобы не изменилось значение "a".
+А во втором цикле в качестве счетчика.*/ 
