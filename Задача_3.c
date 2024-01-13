@@ -14,6 +14,13 @@
 
 int main(void)
 {
-    
+    int a, i = 0;
+    scanf("%d", &a);
+    for (; a > 0 && i != 1; a /= 10)
+        i = (a % 10) % 2;
+    if (i != 1)
+        printf("YES");
+    else
+        printf("NO");
     return 0;
 }
