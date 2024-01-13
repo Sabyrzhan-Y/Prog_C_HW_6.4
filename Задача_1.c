@@ -14,19 +14,19 @@
 
 int main(void)
 {
-int a, b;
-scanf("%d %d", &a, &b);
-int sum = 0, i = a;
-if (a <= 100 && b <= 100)
-{
-    while (i < b)
+    int a, b;
+    scanf("%d %d", &a, &b);
+    int sum = 0, i = a;
+    if (a <= 100 && b <= 100)
     {
-        sum = sum + i*i;
-        i++;
+        while (i < b)
+        {
+            sum = sum + i * i;
+            i++;
+        }
+        printf("%d ", sum = sum + i * i);
     }
-    printf("%d ", sum);
-}
-else
-    printf("more 100");
+    else
+        printf("more 100");
     return 0;
 }
