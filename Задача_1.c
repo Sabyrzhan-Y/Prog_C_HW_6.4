@@ -30,3 +30,5 @@ int main(void)
         printf("more 100");
     return 0;
 }
+
+// Код работает, при условии что a < b
